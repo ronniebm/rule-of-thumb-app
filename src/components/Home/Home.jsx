@@ -1,6 +1,13 @@
+import BannerTop from "../BannerTop/BannerTop";
+import BannerBottom from "../BannerBottom/BannerBottom";
+
 const Home = () => {
     return (
-        <h2 className="home">home component</h2>
+        <div class="max-centered">
+            <BannerTop />
+            <h2 className="home">home component</h2>
+            <BannerBottom />
+        </div>
     )
 }
 

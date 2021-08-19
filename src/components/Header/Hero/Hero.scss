@@ -1,0 +1,67 @@
+.hero {
+    position: relative; 
+    overflow: hidden;
+    height: 80vw;
+    min-height: 35rem;
+    max-height: 38rem;
+    margin-bottom: 2rem;
+
+    &__background {
+        position: absolute;
+        left: -35vw;
+        width: 160vw;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__featured-card {
+        position: relative;
+        top: 5.5rem;
+        left: 1rem;
+        overflow: hidden;
+        width: 55vw;
+        max-height: 25rem;
+    }
+    &__closing-gauge {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        height: 3rem;
+        background-color: var(--color-light-background);
+    }
+}
+
+@media all and (min-width: 768px) {
+
+    .hero {
+        max-height: 38rem;
+        
+        &__background {
+            top: 0;
+            left: 0;
+            width: 110vw;
+            height: auto;
+        }
+    }
+}
+
+@media all and (min-width: 1100px) {
+
+    .hero {
+        min-height: 700px;
+
+        &__background {
+            top: -2.5rem;
+            left: 0;
+            width: 100vw;
+            height: auto;
+        }
+        &__featured-card {
+            left: 0;
+            width: 50%;
+            min-width: 600px;
+            max-height: unset;
+            margin-top: 2.5rem;
+        }
+    }
+}

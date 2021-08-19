@@ -1,6 +1,15 @@
+import NavBar from "./NavBar/NavBar";
+import Hero from "./Hero/Hero"
+import "./Header.scss";
+
+
 const Header = () => {
+
     return (
-        <h2 className="header">header component</h2>
+        <div>
+            <NavBar />
+            <Hero />
+        </div>
     )
 }
 
