@@ -1,0 +1,28 @@
+.list-section {
+    border: 1px solid red;
+}
+
+.list-section-top {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #464646;
+    }
+}
+
+.card-list {
+    border: 1px solid magenta;
+    padding: 10px 0;
+}
+
+.card {
+    border: 1px solid salmon;
+    width: 200px;
+    height: 200px;
+}
