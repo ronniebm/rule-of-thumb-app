@@ -36,7 +36,12 @@
 
     .footer {
         align-items: flex-start;
+        position: relative;
 
+        &__links {
+            height: 36px;
+            padding-top: 7px;
+        }
         &__links ul,
         &__social {
             display: flex;
@@ -48,6 +53,9 @@
         }
         &__social {
             align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
         &__social span {
             margin-right: 1rem;

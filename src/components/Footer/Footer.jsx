@@ -2,7 +2,7 @@ import "./Footer.scss";
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer max-centered">
             <div className="footer__links">
                 <ul>
                     <li>

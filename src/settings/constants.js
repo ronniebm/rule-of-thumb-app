@@ -18,7 +18,8 @@ const PLACEHOLDERS = {
     privacy: 'Privacy Policy',
     contact: 'Contact Us',
     follow: 'Follow Us',
-    notFound: 'Sorry, not found (404 Error)'
+    notFound: 'Sorry, not found (404 Error)',
+    thanks: "Thank you for your vote!"
 }
 
 export { ROUTES, PLACEHOLDERS };

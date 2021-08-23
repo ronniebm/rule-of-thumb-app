@@ -1,0 +1,107 @@
+.card {
+    height: 348px;
+    width: 348px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 12px;
+
+    &__img {
+        height: 348px;
+        width: 348px;
+    }
+    &__content {
+        height: 250px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(360deg, rgba(0,0,0,0.8043912394662921) 0%, rgba(0,0,0,0.4167507900280899) 46%, rgba(17,232,208,0) 100%);
+        padding-left: 11%;
+        padding-right: 11%;
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__artist, &__text, &__time {
+        color: #FFFFFF;
+    }
+    &__artist {
+        height: 85px;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 7px;
+        display: flex;
+        align-items: flex-end;
+    }
+    &__text {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    &__time {
+        font-size: 12px;
+        line-height: 14px;
+        text-align: right;
+    }
+    &__voting {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 220px;
+
+        &__vote-now {
+            width: 107px;
+            height: 38px;
+            padding: 10px 4.6px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid #FFFFFF;
+            color: #FFFFFF;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+    }
+    &__bottom {
+        display: flex;
+        margin-top: 12px;
+        width: 348px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        &__left, &__right {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            height: 36px;
+        }
+        &__left {
+            background-color: rgba(60, 187, 180, 0.6);
+            padding-left: 12px;
+            &__icon {
+                position: absolute; 
+            }
+        }
+        &__right {
+            background-color: rgba(249, 173, 29, 0.6);
+            padding-right: 12px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__left-rank, &__right-rank {
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            position: absolute;
+        }
+        &__right-rank {
+            right: 12%;
+        }
+        &__left-rank {
+            left: 12%;
+        }
+    }
+}
