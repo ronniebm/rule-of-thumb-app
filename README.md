@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Rule of Thumb App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The app <b>Rule of Thumb</b> tm. tracks the sentiment of their users on trending and controversial people from different fields, including politics, business, media and entertainment, etc. The website has the following requirement: they need to present their users with an easy way to share their opinion on each presented celebrity, using votes (thumbs up and down), and display the results to the user while the poll is open. These features should be available to all users, regardless of where they're accessing the website from, whether it's a smartphone, a tablet or a desktop computer.
+___   
 
-## Available Scripts
+#### App design Requirements:
+    https://github.com/zemoga/ui-test   
 
-In the project directory, you can run:
+___   
 
-### `npm start`
+#### Steps to Test in local machine.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. execute command <code>npm install</code>
+2. execute command <code>npm start</code>
+(* This command has been modified in package.json, to run in parallel: Json Server & react-script start )
+3. to execute tests, use command <code>npm test</code>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+___   
 
-### `npm test`
+#### dependencies:
+- "node-sass": "^6.0.1"
+- "react-router-dom": "^5.2.0"
+- "axios": "^0.21.1"
+- "prop-types": "^15.7.2" (unfortunately I haven't implemented yet due time limit ...)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+___   
 
-### `npm run build`
+#### dev-dependencies:
+- "json-server": "^0.16.3" (It was configured to serve on port: 3001/data, check package.json )
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- Social networks section -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
+<br>
+<table>
+  <tr>
+    <td>
+      <img
+        src="https://avatars.githubusercontent.com/u/65184918?v=4"
+        width="150px"
+      />
+    </td>
+    <td>
+      <img
+        src="https://github.com/ronniebm/holbertonschool-web_front_end/blob/master/qr-code.png"
+        width="150px"
+      />
+    </td>
+  </tr>
+</table>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h3>
+  <b>👋 Hi, I'm Ronnie Barrios.
+  </b>
+</h3>
+____________________________________
+<br>
+Let's get in touch !, scan QR code.
+<br><br>
 
-### `npm run eject`
+<a href="https://twitter.com/ronniealberto">
+  <img 
+    src="https://pics.freeicons.io/uploads/icons/png/20422544081555590088-512.png"
+    width="30px"
+  />
+</a>
+&emsp;
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<a href="https://www.linkedin.com/in/ronniebm/">
+  <img 
+    src="https://pics.freeicons.io/uploads/icons/png/15792152941556105325-512.png"
+    width="30px"
+  />
+</a>
+&emsp;
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="https://github.com/ronniebm/">
+  <img 
+    src="https://pics.freeicons.io/uploads/icons/png/13702699181561032680-512.png"
+    width="30px"
+  />
+</a>
+&emsp;
+<br>
+<a href="mailto:ronnie.coding@gmail.com?subject=Let's do a meet ! &amp;body=Hi Ronnie, %0D%0A%0D%0A I've check your Github profile, i would like to contact you.%0D%0A%0D%0A Att,%0D%0A------------------------%0D%0A***your sign*** &amp;">
+<br>
+--->&emsp;or Send EMAIL here&emsp;<---
+</a>
