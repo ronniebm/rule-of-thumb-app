@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { putUserVote } from '../../../services/api';
+import { putUserVote } from '../../../api/axios';
 
 const imgThumbDown = require("../../../../src/assets/img/thumbs-down.svg").default;
 const imgThumbUp = require("../../../../src/assets/img/thumbs-up.svg").default;

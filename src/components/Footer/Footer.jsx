@@ -2,8 +2,8 @@ import "./Footer.scss";
 
 const Footer = () => {
     return (
-        <footer className="footer max-centered">
-            <div className="footer__links">
+        <footer className="footer">
+            <section className="footer__links">
                 <ul>
                     <li>
                         <a href="/">Terms and Conditions</a>
@@ -15,9 +15,9 @@ const Footer = () => {
                         <a href="/">Contact Us</a>
                     </li>
                 </ul>
-            </div>
-            <div className="footer__social">
-                <span>Follow us</span>
+            </section>
+            <section className="footer__social">
+                <p className="footer__social__text">Follow us</p>
                 <ul>
                     <li>
                         <a href="/">
@@ -34,7 +34,7 @@ const Footer = () => {
                         </a>
                     </li>
                 </ul>
-            </div>
+            </section>
         </footer>
     )
 }

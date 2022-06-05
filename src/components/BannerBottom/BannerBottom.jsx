@@ -1,11 +1,13 @@
 import "./BannerBottom.scss";
+import bgPeople from '../../assets/img/bg-people.png';
 
 const BannerBottom = () => {
     return (
         <>
             <aside className="banner banner-bottom" role="doc-tip" aria-label="Submit a name">
                 <img
-                    className="banner__background" src="assets/img/bg-people.png"
+                    className="banner__background"
+                    src={ bgPeople }
                     alt=""
                     role="none"
                 />
@@ -18,7 +20,7 @@ const BannerBottom = () => {
                     </button>
                 </div>
             </aside>
-            <hr role="separator" />
+            <hr className="banner__separator"/>
         </>
     );
 }

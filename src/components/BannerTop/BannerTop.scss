@@ -7,7 +7,6 @@
     padding: 1rem;
     margin: 1rem;
     background-color: var(--color-light-gray);
-
     &__background {
         position: absolute;
         top: 0;
@@ -57,7 +56,6 @@
 
 
 @media all and (min-width: 500px) {
-
     .banner-top .banner__left {
         flex-basis: 30%;
     }
@@ -69,7 +67,6 @@
 
 
 @media all and (min-width: 768px) {
-
     .banner-top .banner__left {
         flex-basis: 20%;
     }
@@ -80,6 +77,9 @@
 }
 
 @media all and (min-width: 1100px) {
+    .banner {
+        margin: 0;
+    }
 
     .banner-top .banner__text,
     .banner-top .banner__left > .banner__hairline {

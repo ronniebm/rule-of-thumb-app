@@ -1,7 +1,6 @@
 import iconThumbsUp from "../../../assets/img/thumbs-up.svg";
 import iconThumbsDown from "../../../assets/img/thumbs-down.svg";
 import imgPopeFrancis from "../../../assets/img/pope-francis.png";
-
 import "./Hero.scss";
 import "./HeroClosingGauge.scss";
 import "./HeroFeaturedCard.scss";
@@ -14,7 +13,6 @@ const Hero = () => {
                 src={imgPopeFrancis}
                 alt="Pope Francis"
             />
-
             <div className="max-centered">
                 <div className="hero__featured-card">
                     <div className="featured-card__glass-background"></div>

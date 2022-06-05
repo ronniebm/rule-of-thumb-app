@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     &__title {
         font-weight: 300;
         font-size: 24px;
@@ -28,8 +27,12 @@
 }
 
 .card-grid {
+    &__div {
+        background-color: green;
+        height: 200px;
+        width: 200px;
+    }
     overflow-x: auto;
-
     @media screen and (min-width: 768px) {
         overflow-x: initial;
         display: grid;
@@ -37,12 +40,10 @@
         grid-row-gap: 27px;
         grid-column-gap: 0px;
     }
-
     @media screen and (min-width: 1024px) {
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 35px;
     }
-    
     @media screen and (min-width: 1100px) {
         grid-column-gap: 15px;
     }
@@ -59,7 +60,6 @@
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
-
     &:last-child {
         cursor: pointer;
     }
@@ -67,7 +67,6 @@
 
 .style-thumb-down {
     background-color: #FBBD4A;
-
     &:nth-child(1) {
         position: absolute;
         top: 19%;

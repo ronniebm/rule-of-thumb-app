@@ -5,7 +5,6 @@
     min-height: 35rem;
     max-height: 38rem;
     margin-bottom: 2rem;
-
     &__background {
         position: absolute;
         left: -35vw;
@@ -32,24 +31,21 @@
 }
 
 @media all and (min-width: 768px) {
-
     .hero {
         max-height: 38rem;
-        
         &__background {
             top: 0;
             left: 0;
             width: 110vw;
             height: auto;
+            background-size: cover;
         }
     }
 }
 
 @media all and (min-width: 1100px) {
-
     .hero {
         min-height: 700px;
-
         &__background {
             top: -2.5rem;
             left: 0;

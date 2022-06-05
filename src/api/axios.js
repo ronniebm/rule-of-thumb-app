@@ -14,6 +14,7 @@ export const getCharacters = async ( setCharacters ) => {
         })
 }
 
+export const api = axios.create({baseURL: baseUrl})
 
 /* putUserVote() : will update a single character data trought API.
 -------------------------------------------------------------------*/
