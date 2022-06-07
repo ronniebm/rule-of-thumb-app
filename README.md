@@ -8,6 +8,26 @@ ___
 
 ___   
 
+## Acceptance criteria:  
+✅ Mobile prototype.  
+✅ Tablet prototype.  
+✅ Desktop prototype.  
+✅ Mobile version only shows a horizontal scrolling list of cards.  
+✅ in Tablet/Desktop version, user can switch LIST/GRID view.  
+  > If list view selected, then cards will be stacked vertically.  
+  > If grid view selected, then cards are positioned as grid elements.  
+
+✅ Each card contains a functional gauge bar showing votes as percentage.  
+✅ Each card contains three buttons, "thumbs UP", "thumbs DOWN", "Vote now".  
+✅ Pressing "thumbs UP" or "thumbs DOWN" will highlight its border in white color, and will enable "Vote now" button.  
+✅ if "Vote now" button is pressed, then the vote will be posted.  
+✅ after pressing "Vote now" button, an eyebrow text will show "Thank you for your vote", with an enabled "Vote again" button.  
+✅ The gauge bar will reflect changes after a vote is sent.  
+✅ if "Vote again" button is pressed, then will enable voting buttons again.  
+✅ all posted button are persistent (json server).  
+✅ if user voted or enable voting again, those changes will persist if refreshing the browser.  
+✅ some unit test were implemented with jest (npm run test).  
+
 #### Steps to Test in local machine.
 
 1. execute command <code>npm install</code>
@@ -19,6 +39,7 @@ ___
 
 #### dev-dependencies:
 - "json-server": "^0.16.3" (It was configured to serve on port: 3001/data, check package.json )
+
 
 <!-- Social networks section -->
 
