@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 //import { Grid } from '@material-ui/core'
 import { ROUTES, PLACEHOLDERS } from "./settings/constants";
 
-import Home from './components/Home/Home';
+import Home from './pages/Home/Home.jsx';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Placeholder from './components/Placeholder/Placeholder';

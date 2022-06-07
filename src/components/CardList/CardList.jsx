@@ -1,25 +1,24 @@
 import { useState } from 'react';
-import { calculateVotes, capitalizeString, cutString, searchStorage } from '../../../assets/helpers';
+import { calculateVotes, capitalizeString, cutString, searchStorage } from '../../assets/helpers';
 import VotingBox from '../VotingBox/VotingBox';
-import { PLACEHOLDERS } from '../../../settings/constants';
+import { PLACEHOLDERS } from '../../settings/constants';
 import './CardList.scss';
 
-const imgThumbDown = require("../../../../src/assets/img/thumbs-down.svg").default;
-const imgThumbUp = require("../../../../src/assets/img/thumbs-up.svg").default;
+const imgThumbDown = require("../../assets/img/thumbs-down.svg").default;
+const imgThumbUp = require("../../assets/img/thumbs-up.svg").default;
+
 
 const CardList = ({ data }) => {
 
-    let { name, description, category, picture, votes } = data;
-    let [ voted, setVoted ] = useState( searchStorage( data.id ) );
-    const [ character, setCharacter ] = useState( data );
+    const { name, description, category, picture, votes } = data;
+    const [voted, setVoted] = useState( searchStorage( data.id ) );
+    const [character, setCharacter] = useState( data );
     const [params, setParams] = useState( calculateVotes(votes) );
 
     return (
         <div className="card-row">
             <img className="card-row__img" src={ picture } alt={ picture } />
-
             <div className="card-row__content">
-
                 <div className="card-row__gradient"/>
                 <div className="card-row__corner" style={params.good ? {backgroundColor: "#3CBBB4"} : {}}>
                     <img src={ params.good ? imgThumbUp : imgThumbDown } alt="thumbs-down" />  

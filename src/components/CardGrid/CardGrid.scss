@@ -1,3 +1,5 @@
+$card-gradient: linear-gradient(360deg, rgba(0,0,0,0.8043912394662921) 0%, rgba(0,0,0,0.4167507900280899) 46%, rgba(17,232,208,0) 100%);
+
 .card {
     height: 348px;
     width: 348px;
@@ -15,7 +17,7 @@
         width: 100%;
         position: absolute;
         bottom: 0;
-        background: linear-gradient(360deg, rgba(0,0,0,0.8043912394662921) 0%, rgba(0,0,0,0.4167507900280899) 46%, rgba(17,232,208,0) 100%);
+        background: $card-gradient;
         padding-left: 11%;
         padding-right: 11%;
     }

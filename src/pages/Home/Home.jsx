@@ -1,28 +1,21 @@
 import { useState, useEffect } from 'react';
-import BannerTop from '../BannerTop/BannerTop';
-import BannerBottom from '../BannerBottom/BannerBottom';
-import CardGrid from './CardGrid/CardGrid';
-import CardList from './CardList/CardList';
-import axios from 'axios';
+import './Home.scss';
+import BannerTop from '../../components/BannerTop/BannerTop';
+import BannerBottom from '../../components/BannerBottom/BannerBottom';
+import CardGrid from '../../components/CardGrid/CardGrid';
+import CardList from '../../components/CardList/CardList';
+import { getCharacters } from '../../api/axios';
 
 // useWindowDimensions: a manual created hook.
 import { useWindowDimensions } from '../../assets/helpers';
-
-import './Home.scss';
-import { getCharacters, api } from '../../api/axios';
 
 const Home = () => {
   const [gridView, setGridView] = useState(false);
   const [characters, setCharacters] = useState([]);
   const { width } = useWindowDimensions();
 
-  const url = 'http://localhost:3001/data';
   useEffect(() => {
-    const consultaAPI = async () => {
-      const consulta = await axios({ url });
-      setCharacters(consulta.data);
-    };
-    consultaAPI();
+    getCharacters(setCharacters)
   }, []);
 
   const handleChange = (e) => {
@@ -39,7 +32,7 @@ const Home = () => {
     width < 768 || gridView ? 'card-grid' : 'card-list';
 
   return (
-    <div className='max-centered'>
+    <section className='home max-centered' data-testid="home-1">
       <BannerTop />
       <main className='list-section' role='main'>
         <section className='list-section-top'>
@@ -63,7 +56,7 @@ const Home = () => {
         </section>
       </main>
       <BannerBottom />
-    </div>
+    </section>
   );
 };
 

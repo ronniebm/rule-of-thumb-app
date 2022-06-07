@@ -1,12 +1,15 @@
 import { useState } from 'react';
-import { putUserVote } from '../../../api/axios';
+import { putUserVote } from '../../api/axios';
 
-const imgThumbDown = require("../../../../src/assets/img/thumbs-down.svg").default;
-const imgThumbUp = require("../../../../src/assets/img/thumbs-up.svg").default;
+const imgThumbDown = require("../../assets/img/thumbs-down.svg").default;
+const imgThumbUp = require("../../assets/img/thumbs-up.svg").default;
 
 const VotingBox = ({ character, setCharacter, setParams, voted, setVoted }) => {
-
+    // debugger
     const [ thumb, setThumb ] = useState(null);
+    const btnDisable = thumb === "positive" || thumb === "negative" || voted
+                       ? false
+                       : true;
 
     const handleThumbClick = (e) => {
         if (e.target.className.includes("style-thumb-up")) setThumb("positive");
@@ -14,9 +17,15 @@ const VotingBox = ({ character, setCharacter, setParams, voted, setVoted }) => {
     }
 
     const handleVoteClick = () => {
-        voted ? setVoted (false) 
-            : putUserVote( thumb, setThumb, character, setCharacter, setParams, setVoted );
+        if (voted){
+            localStorage.removeItem(`rule-of-thumb-id-${ character.id }`);
+            setVoted (false);
+        }
+        else {
+            putUserVote( thumb, setThumb, character, setCharacter, setParams, setVoted );
+        } 
     }
+
 
     return (
         <>
@@ -36,8 +45,9 @@ const VotingBox = ({ character, setCharacter, setParams, voted, setVoted }) => {
             }
 
             <button
-                className="card-row__voting__vote-now"
+                className={`card-row__voting__vote-now ${btnDisable ? "vote-disabled" : null }`}
                 onClick={ handleVoteClick }
+                disabled={btnDisable}
             >
                 { voted ? "Vote Again" : "Vote Now"}
             </button>

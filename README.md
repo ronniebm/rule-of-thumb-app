@@ -13,15 +13,7 @@ ___
 1. execute command <code>npm install</code>
 2. execute command <code>npm start</code>
 (* This command has been modified in package.json, to run in parallel: Json Server & react-script start )
-3. to execute tests, use command <code>npm test</code>
-
-___   
-
-#### dependencies:
-- "node-sass": "^6.0.1"
-- "react-router-dom": "^5.2.0"
-- "axios": "^0.21.1"
-- "prop-types": "^15.7.2" (unfortunately I haven't implemented yet due time limit ...)
+3. to execute tests, you can use command <code>npm run  test</code>
 
 ___   
 
@@ -55,7 +47,7 @@ ___
 </h3>
 ____________________________________
 <br>
-Let's get in touch !, scan QR code.
+Let's get in touch !, scan this QR code.
 <br><br>
 
 <a href="https://twitter.com/ronniealberto">

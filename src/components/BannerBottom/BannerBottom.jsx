@@ -3,8 +3,8 @@ import bgPeople from '../../assets/img/bg-people.png';
 
 const BannerBottom = () => {
     return (
-        <>
-            <aside className="banner banner-bottom" role="doc-tip" aria-label="Submit a name">
+        <section data-testid="banner-bottom-1">
+            <aside className="banner banner-bottom" role="doc-tip" aria-label="Submit a name" >
                 <img
                     className="banner__background"
                     src={ bgPeople }
@@ -15,13 +15,13 @@ const BannerBottom = () => {
                     <h2 className="banner__heading">Is there anyone else you would want us to add?</h2>
                 </div>
                 <div className="banner__right">
-                    <button className="banner__cta">
+                    <button className="banner__cta" data-testid="banner-bottom-btn-submit">
                         Submit a name
                     </button>
                 </div>
             </aside>
             <hr className="banner__separator"/>
-        </>
+        </section>
     );
 }
 

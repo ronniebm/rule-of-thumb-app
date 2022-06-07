@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { calculateVotes, capitalizeString, cutString, searchStorage } from '../../../assets/helpers';
+import { calculateVotes, capitalizeString, cutString, searchStorage } from '../../assets/helpers';
 import VotingBox from '../VotingBox/VotingBox';
-import { PLACEHOLDERS } from '../../../settings/constants';
+import { PLACEHOLDERS } from '../../settings/constants';
 import './CardGrid.scss';
 
-const imgThumbDown = require("../../../../src/assets/img/thumbs-down.svg").default;
-const imgThumbUp = require("../../../../src/assets/img/thumbs-up.svg").default;
+const imgThumbDown = require("../../assets/img/thumbs-down.svg").default;
+const imgThumbUp = require("../../assets/img/thumbs-up.svg").default;
 
 const CardGrid = ({ data, width }) => {
 
@@ -16,9 +16,10 @@ const CardGrid = ({ data, width }) => {
     const mobile = { height: 300, width: 300};
 
     return (
-        <div
+        <section
             className="card" key={ id }
             style={ width <= 1024 ? mobile : null}
+            data-testid="card-grid-1"
         >
             <img
                 className="card__img"
@@ -72,7 +73,7 @@ const CardGrid = ({ data, width }) => {
                 </div>
 
             </div>
-        </div>
+        </section>
     );
 }
 
